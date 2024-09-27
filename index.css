@@ -1,0 +1,152 @@
+body{
+    background-color: rgb(7, 4, 32);
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+    font-family: 'kanit';
+    margin: 0;
+}
+.container{
+    margin-top: -3%;
+    width: 60%;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+}
+.title{
+    font-size: 2.5rem;
+    position: relative;
+    right: 30%;
+    top: 10%;
+    color: white;
+}
+.grid{
+    width: 50%;
+    margin-left: 23%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    height: 80%;
+    gap: 20px;
+    
+}
+.grid > * {
+    width: 100%;
+    height: 100%;
+    background-color:  rgb(7, 4, 25);
+    border-radius:10px ;
+     font-size: 50px;
+     color: #c82121;
+     font-weight: bold; 
+     font-size: 70px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
+}
+.span{
+    margin-top: 30px;
+ width: 100%;
+ height: 20%;
+ display: flex;
+ justify-content: space-around;
+}
+.span > *{
+    width: 30%;
+    height: 80px;
+    border-radius: 10px;
+    border: none;
+    font-size: 30px;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+}
+.span1{
+    background-color: coral;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.span2{
+    background-color:brown;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.span3{
+    background-color:gold;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: white;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1; 
+}
+.overlay.active {
+    display: block;
+}
+.overlay .text{
+    display: block;
+    position: relative;
+    top: 30%;
+    left: 35%;
+    font-size: xx-large;
+}
+.text.active{
+    display: block;
+}
+.buton{
+        position: absolute;
+         right: 50%;
+         top: 50%;
+         cursor: pointer;
+        color: white;
+        background-color: darkgoldenrod;
+        width: 6%;
+        height: 70px;
+         display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+        border: none;
+        border-radius: 50%;
+    } 
+    .buton.active{
+        display: block;
+    }
+    form{
+        box-sizing: border-box;
+        height: 150px;
+        width: 15%;
+        color: firebrick;
+        font-size: 25px;
+        display: none;
+        flex-direction: column;
+    }
+    form input{
+        outline: none;
+        border-radius: 5px;
+        border: 1px groove;
+        height: 30px;
+    }
+    form .btn{
+        width: 35%;
+        height: 50px;
+        margin: auto;
+        margin-top: 10px;
+        border-radius: 10px;
+        border: none;
+        
+    }
